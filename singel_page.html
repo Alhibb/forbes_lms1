@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All About Web Development</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #007acc;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin-bottom: 0.2rem;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffdd57;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #007acc;
+      padding-bottom: 0.5rem;
+      color: #007acc;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    a.resource-link {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a.resource-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #007acc;
+      color: white;
+      font-size: 0.9rem;
+      position: sticky;
+      bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      header, main {
+        padding: 1rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>All About Web Development</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="#">Single page</a>
+    <a href="instructors.html">Instructors</a>
+    <a href="#resources">Resources</a>
+  </nav>
+</header>
+
+<main>
+  <section id="intro">
+    <h2>Introduction to Web Development</h2>
+    <p>Web development is the process of building websites and web applications that run on the internet. It involves creating and maintaining web pages, handling databases, and ensuring user experience across devices.</p>
+    <p>There are two main types of web development:</p>
+    <ul>
+      <li><strong>Frontend Development:</strong> What users see and interact with.</li>
+      <li><strong>Backend Development:</strong> Server-side logic, databases, and application integration.</li>
+    </ul>
+  </section>
+
+  <section id="frontend">
+    <h2>Frontend Development</h2>
+    <p>Frontend development focuses on building the visual aspects of a website or web app. It involves writing code that runs in the user’s browser.</p>
+    <ul>
+      <li><strong>Languages:</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Frameworks/Libraries:</strong> React, Angular, Vue.js</li>
+      <li><strong>Key Concepts:</strong> Responsive Design, Accessibility, Performance Optimization</li>
+      <li><strong>Tools:</strong> Webpack, Babel, npm</li>
+    </ul>
+  </section>
+
+  <section id="backend">
+    <h2>Backend Development</h2>
+    <p>Backend development deals with the server, databases, and application logic that power the frontend.</p>
+    <ul>
+      <li><strong>Languages:</strong> JavaScript (Node.js), Python, Ruby, PHP, Java, C#</li>
+      <li><strong>Frameworks:</strong> Express, Django, Ruby on Rails, Laravel, Spring</li>
+      <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis</li>
+      <li><strong>Concepts:</strong> REST APIs, Authentication, Authorization, Data Modeling</li>
+    </ul>
+  </section>
+
+  <section id="tools">
+    <h2>Tools & Technologies</h2>
+    <ul>
+      <li><strong>Version Control:</strong> Git, GitHub, GitLab, Bitbucket</li>
+      <li><strong>Package Managers:</strong> npm, yarn</li>
+      <li><strong>Build Tools:</strong> Webpack, Gulp, Parcel</li>
+      <li><strong>Code Editors:</strong> VS Code, Sublime Text, Atom</li>
+      <li><strong>Deployment Platforms:</strong> Netlify, Vercel, Heroku, AWS, DigitalOcean</li>
+    </ul>
+  </section>
+
+  <section id="resources">
+    <h2>Resources & Learning Links</h2>
+    <ul>
+      <li><a class="resource-link" href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs - Learn Web Development</a></li>
+      <li><a class="resource-link" href="https://freecodecamp.org" target="_blank" rel="noopener">freeCodeCamp</a></li>
+      <li><a class="resource-link" href="https://css-tricks.com" target="_blank" rel="noopener">CSS-Tricks</a></li>
+      <li><a class="resource-link" href="https://javascript.info" target="_blank" rel="noopener">JavaScript.info</a></li>
+      <li><a class="resource-link" href="https://frontendmasters.com" target="_blank" rel="noopener">Frontend Masters</a></li>
+      <li><a class="resource-link" href="https://egghead.io" target="_blank" rel="noopener">Egghead.io</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Forbes Royal College | Created by a group.
+</footer>
+
+</body>
+</html>
