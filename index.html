@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forbes LMS - Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        .container {
+            background: rgba(255,255,255,0.95);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+            border-radius: 24px;
+            padding: 48px 32px 32px 32px;
+            max-width: 480px;
+            text-align: center;
+            animation: fadeIn 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #2d3a4b;
+            margin-bottom: 0.5em;
+            letter-spacing: 1px;
+            animation: slideDown 1s ease;
+        }
+        @keyframes slideDown {
+            0% { opacity: 0; transform: translateY(-40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4e5d6c;
+            margin-bottom: 2em;
+            animation: fadeIn 1.5s 0.5s backwards;
+        }
+        .teams {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            animation: fadeIn 1.5s 0.8s backwards;
+        }
+        .team-card {
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            border-radius: 16px;
+            padding: 24px 18px;
+            min-width: 100px;
+            box-shadow: 0 4px 16px rgba(140, 152, 164, 0.12);
+            font-size: 1.1rem;
+            color: #2d3a4b;
+            font-weight: 600;
+            transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+        .team-card:hover {
+            transform: translateY(-10px) scale(1.07) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(140, 152, 164, 0.22);
+        }
+        .team-card::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 4px;
+            background: #8ec5fc;
+            border-radius: 2px;
+            margin: 12px auto 0 auto;
+            opacity: 0.7;
+            transition: background 0.3s;
+        }
+        .team-card:hover::after {
+            background: #e0c3fc;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 32px 8px; }
+            .teams { flex-direction: column; gap: 16px; }
+        }
+        .navbar {
+            width: 100%;
+            background: rgba(255,255,255,0.85);
+            box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5em 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            animation: fadeIn 1.2s 0.2s backwards;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+        .nav-link {
+            color: #2d3a4b;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 8px 18px;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-link:hover {
+            background: #e0c3fc;
+            color: #5a189a;
+        }
+        @media (max-width: 600px) {
+            .nav-links { gap: 12px; }
+            .nav-link { font-size: 1rem; padding: 6px 10px; }
+        }
+        .container {
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="courses.html">Courses</a>
+            <a class="nav-link" href="instructors.html">Instructors</a>
+            <a class="nav-link" href="singel_page.html">Single Page</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Forbes Royal Schools LMS</h1>
+        <div class="subtitle">Welcome to the Learning Management System</div>
+        <div class="teams">
+            <div class="team-card">Khadija</div>
+            <div class="team-card">Aisha</div>
+            <div class="team-card">Sarah</div>
+        </div>
+    </div>
+</body>
+</html>
